@@ -79,3 +79,7 @@ python main.py
 ### 3 - Escolha da estratégia de avaliação
 
 - Após as respostas serem apresentadas, o CLI solicitará que você escolha uma das três estratégias de avaliação
+
+## Vídeo da aplicação em execução
+
+- Segue o vídeo explicando e executando brevemente a aplicação: [vídeo](https://youtu.be/n3PoU3X1GAQ)
