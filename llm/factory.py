@@ -1,7 +1,8 @@
 from llm.GPT_connector import ChatGPTConnector
 from llm.roberta_connector import RoBERTaConnector
-from llm.distilgpt2_connector import DistilGPT2Connector
 from llm.llm_connector import LLMConnector
+from llm.distilgpt2_connector import DistilGPT2Connector
+from llm.gemini_connector import GeminiConnector
 
 class LLMFactory:
     @staticmethod
@@ -11,6 +12,8 @@ class LLMFactory:
         elif llm_type == "RoBERTa":
             return RoBERTaConnector()
         elif llm_type == "DistilGPT2":
-            return DistilGPT2Connector() 
+            return DistilGPT2Connector()
+        if llm_type == "Gemini":
+            return GeminiConnector(api_key)    
         else:
             raise ValueError(f"Tipo de LLM desconhecido: {llm_type}")
